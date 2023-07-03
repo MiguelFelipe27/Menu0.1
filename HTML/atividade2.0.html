@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 0.1</title>
+</head>
+<body>
+    <form> 
+        Nome Completo: <br><input type="text" placeholder = "Digite seu nome completo"><br>
+        Telefone: <br><input type="text" maxLength="12" nome="telefone"><br>
+        Profissão:  <br><input type="text" size="20" nome="Profissão"><br>
+    </form>
+    <hr>
+    <form>
+        Login: <input type="text" nome = "login"><br>
+        Senha: <input type="password" nome = "senha"><br>
+    </form>
+    <hr>
+    <form action="#" method="get"> <!--get aparece os dados no endereco e o post envia por dentro do navegador(meio q segurança) -->
+        Nome:<br><input type="text" name="Nome" size = "30" placeholder = "Digite seu nome aqui"><br></legend>
+        Sobrenome: <br><input type="text" name="Sobrenome" placeholder ="Informe seu sobrenome aqui"><br>
+        Telefone: <br><input type="text" maxLength="12" nome="telefone"><br>
+        Profissão:  <br><input type="text" size="20" nome="Profissão"><br>
+        Endereço: <br><input type="text" size="60" nome = "Endereço"><br>
+        Senha: <br><input type="password" maxLength="8" nome = "senha" required><br>
+    <fieldset>
+        <legend>Sexo: </legend>
+        <input type="radio" nome = "genero" value = "M" checked> Masculino <br>
+        <input type="radio" nome = "genero" value = "F"> Feminino <br>
+        <input type="radio" nome = "genero" value = "O"> Outro <br>
+    </fieldset>
+    <fieldset>
+        <legend>Estado Civil: </legend><br>
+        <input type="radio" nome="estCivil" value="C"> Casado <br>
+        <input type="radio" nome="estCivil" value="S" checked> Solteiro <br>
+        <input type="radio" nome="estCivil" value="V"> Viúvo <br>
+        <input type="radio" nome="estCivil" value="D"> Divorciado <br>
+        <input type="radio" nome="estCivil" value="A"> Amasiado <br>
+        <input type="radio" nome="estCivil" value="O"> Outro <br>
+    </fieldset>
+    <hr>
+    <form action="#">
+    <fieldset>
+       <legend>Linguagens: </legend><br>
+        <input type="checkbox" name="linguagens" id="lin01" value="C#">C# <br>
+        <input type="checkbox" name="linguagens" id="lin01" value="Java">Java <br>
+        <input type="checkbox" name="linguagens" id="lin01" value="SQL">SQL <br>
+        <input type="checkbox" name="linguagens" id="lin01" value="PHP">PHP <br>
+        <input type="checkbox" name="linguagens" id="lin01" value="Java Script">Java Script <br>
+        <input type="checkbox" name="linguagens" id="lin01" value="HTML">HTML <br>
+    </fieldset>
+    <br>
+    </form>
+    <fieldset>
+        Estados <select nome="estado">
+            <option ></option>
+            <optgroup label="SUL">
+                <option>Paraná
+                <option>Santa Catarina
+                <option>Rio Grande so Sul
+            </option>
+            <option ></option>
+            <optgroupb Label = "Sudeste">
+                <option> SP
+                <option> RJ
+                <option> MG
+                <option> ES
+            </optgroup>
+        </select>
+        <br>
+        <textarea name="Comentario" cols="50" rows="2">
+            Coloque seu comentário
+        </textarea>
+        <br>Data de Nascimento: <input type="date">
+        Cidades: <input type="text" list ="cidades">
+        <datalist id="cidades">
+            <option> Londrina
+            <option> Cambé
+            <option> Maringá
+        </datalist>
+        <br><input type="reset" value="Limpar">
+        <input type="submit" volue="Enviar">
+    </form>
+</body>
+</html>
+<!-- O que estiver dentro do "value" é oq vai guardar dentro do banco de dados -->

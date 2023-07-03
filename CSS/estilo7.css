@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+overflow: hidden;
+scroll-behavior: smooth;
+}
+nav ul
+{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1.5em;
+    position: fixed;
+    height: 2.5em;
+    background: linear-gradient(to right, rgb(0, 255, 106), rgb(181, 255, 10), rgb(7, 248, 248)) ;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .8);
+    padding-left: 1em;
+}
+a
+{
+    text-decoration: none;
+}
+a:visited
+{
+    color: #000000;
+}
+section
+{
+    min-height: 100vh;
+    padding-top: 3em;
+    padding-left: 1.5em;
+    color: white;
+}
+#ini
+{
+    background: url(../img/imagem1.jpg);
+    background-size: cover;
+}
+#ser
+{
+    background: url(../img/imagem2.jpg);
+    background-size: cover;
+}
+#con
+{
+    background: url(../img/imagem3.jpg);
+    background-size: cover;
+}
+#cur
+{
+    background: url(../img/imagem4.jpg);
+    background-size: cover;
+}
+#sob
+{
+    background: url(../img/imagem5.jpg);
+    background-size: cover;
+}

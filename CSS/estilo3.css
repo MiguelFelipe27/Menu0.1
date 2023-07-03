@@ -1,0 +1,88 @@
+*{                              /* Representa tudo*/
+    margin: 0;                  /*distancia externa*/
+    padding: 0;                 /* Distancia interna*/
+}
+body
+{
+    background: #494949;      /*cor*/
+}
+nav
+{
+    margin: 150px auto;
+    width: 450px;                 /*largura*/
+    height: 450px;                /*altura*/
+}
+#check
+{
+    display: none;
+}
+#central
+{
+    cursor: pointer;     /* Muda a setinha para a maozinha*/
+    width: 150px;
+    height: 150px;
+    position: absolute;   /*Posicao*/
+    margin: 150px 150px;   
+    z-index: 1;           /*sobrepor*/
+}
+#central img
+{
+    width: 100%;                   /*significa o tamano*/
+    border-radius: 50%;           /*redondamento*/
+    transition: all .5s linear;   /*velocidade do botao*/
+}
+.link
+{
+    position: absolute;
+    margin: 195px 195px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_01
+{
+    transform: translateY(-195px);    /*posicao onde ira aparecer*/
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_02
+{
+    transform: translateY(195px);      /*Y vertical*/
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_03
+{
+    transform: translateX(-195px);     /*X horizontal*/ /*Negativo sobe*/
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_04
+{
+    transform: translateX(195px);      /*Positivo desce*/
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_05
+{
+    transform: translateX(155px) translateY(-155px);          
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_06
+{
+    transform: translateX(-155px) translateY(155px);          
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_07
+{
+    transform: translateX(155px) translateY(155px);          
+    transition: all .5s linear;
+}
+#check:checked ~ a #link_08
+{
+    transform: translateX(-155px) translateY(-155px);          
+    transition: all .5s linear;
+}
+#check:checked ~ a #central
+{
+  
+    transform: translateX(195px);
+    transition: all .5s linear;
+}
